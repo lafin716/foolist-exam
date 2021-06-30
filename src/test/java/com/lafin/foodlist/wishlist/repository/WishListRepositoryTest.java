@@ -1,12 +1,10 @@
 package com.lafin.foodlist.wishlist.repository;
 
-import com.lafin.foodlist.wishlist.entity.WIshListEntity;
+import com.lafin.foodlist.wishlist.entity.WishListEntity;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class WishListRepositoryTest {
@@ -14,12 +12,12 @@ class WishListRepositoryTest {
     @Autowired
     private WishListRepository wishListRepository;
 
-    private WIshListEntity create() {
-        var wishList = new WIshListEntity();
+    private WishListEntity create() {
+        var wishList = new WishListEntity();
         wishList.setTitle("title");
         wishList.setCategory("category");
         wishList.setAddress("address");
-        wishList.setReadAddress("read address");
+        wishList.setRoadAddress("read address");
         wishList.setHomePageLink("");
         wishList.setImageLink("");
         wishList.setVisit(false);
